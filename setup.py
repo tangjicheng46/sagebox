@@ -29,5 +29,8 @@ setup(
     install_requires=required,  # 从requirements.txt添加的依赖
     python_requires='>=3.6',
     entry_points={
+        'console_scripts': [
+            'remove_pycache=sagebox.scripts.remove_pycache:main',
+        ]
     },
 )

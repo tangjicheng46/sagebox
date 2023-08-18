@@ -17,10 +17,12 @@ def remove_pycache(directory):
             shutil.rmtree(pycache_path)
             print(f"Deleted {pycache_path}")
 
-
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Remove all __pycache__ directories in the specified directory.")
     parser.add_argument("directory", help="The root directory to search and delete __pycache__ from.")
     args = parser.parse_args()
 
     remove_pycache(args.directory)
+
+if __name__ == "__main__":
+    main()
