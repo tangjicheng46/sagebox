@@ -23,23 +23,30 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/tangjicheng46/sagebox',
     packages=find_packages(),
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-    ],
-    keywords='AI, sagebox, python',
-    install_requires=required,  # 从requirements.txt添加的依赖
     python_requires='>=3.6',
+    install_requires=required,
     entry_points={
         'console_scripts': [
             'remove_pycache=sagebox.scripts.remove_pycache:main',
+            'sage_sysinfo=sagebox.scripts.sage_sysinfo:main',
         ]
     },
+    license='GPLv3',
+    keywords='AI, sagebox, tools, python',
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        "Operating System :: OS Independent",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: POSIX :: Linux",
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'Programming Language :: Python :: 3',
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+    ],
 )
