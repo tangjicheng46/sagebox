@@ -6,13 +6,13 @@ with open('requirements.txt') as f:
 
 setup(
     name='sagebox',
-    version='0.1.0',
-    author='Your Name',
-    author_email='your.email@example.com',
-    description='Elevate your AI projects with seasoned intelligence.',
+    version='0.0.1',
+    author='tangjicheng',
+    author_email='tangjch15@gmail.com',
+    description='Essential tools for programmer',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/sagebox',
+    url='https://github.com/tangjicheng46/sagebox',
     packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -25,7 +25,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    keywords='AI tools, sagebox, python',
+    keywords='AI, sagebox, python',
     install_requires=required,  # 从requirements.txt添加的依赖
     python_requires='>=3.6',
     entry_points={
