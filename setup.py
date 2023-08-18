@@ -1,12 +1,21 @@
 from setuptools import setup, find_packages
 
+def read_version() -> str:
+    with open("./sagebox/__init__.py", "r") as f:
+        lines = f.readlines()
+    for line in lines:
+        if line.startswith("__version__"):
+            delim = '"' if '"' in line else "'"
+            return line.split(delim)[1]
+    raise RuntimeError("Unable to find version string.")
+
 # 从 requirements.txt 读取依赖项
 with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 setup(
     name='sagebox',
-    version='0.0.1',
+    version=read_version(),
     author='tangjicheng',
     author_email='tangjch15@gmail.com',
     description='Essential tools for programmer',
